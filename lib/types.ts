@@ -15,7 +15,7 @@ export interface Folder {
 }
 
 // Define the structure of grouped notes
-export interface GroupedNotes {
+export interface NoteGroups {
   today: Note[];
   yesterday: Note[];
   lastWeek: Note[];
@@ -31,7 +31,7 @@ export interface FolderSidebarProps {
 
 // Props for the NoteList component
 export interface NoteListProps {
-  groupedNotes: GroupedNotes;
+  groupedNotes: NoteGroups;
   selectedNote: number;
   setSelectedNote: (index: number) => void;
 }
@@ -61,7 +61,7 @@ export interface AppState {
 }
 
 // Type for the groupNotes function
-export type GroupNotesFunction = (notes: Note[]) => GroupedNotes;
+export type GroupNotesFunction = (notes: Note[]) => NoteGroups;
 
 // Props for the main Component
 export interface ComponentProps {
