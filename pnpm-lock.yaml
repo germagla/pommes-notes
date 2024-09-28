@@ -20,6 +20,9 @@ importers:
       '@types/gapi':
         specifier: ^0.0.47
         version: 0.0.47
+      '@types/google.accounts':
+        specifier: ^0.0.15
+        version: 0.0.15
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -340,6 +343,9 @@ packages:
 
   '@types/gapi@0.0.47':
     resolution: {integrity: sha512-/ZsLuq6BffMgbKMtZyDZ8vwQvTyKhKQ1G2K6VyWCgtHHhfSSXbk4+4JwImZiTjWNXfI2q1ZStAwFFHSkNoTkHA==}
+
+  '@types/google.accounts@0.0.15':
+    resolution: {integrity: sha512-NiydIuJzwdpnWNqTPOeDzGXhzz46Ll6T4rN3YWSm9Zfx/8ZfbwFbzyPSw1Tkz4uE3gQiU+fRj4KvBVUuHmk+KQ==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -2096,6 +2102,8 @@ snapshots:
       tslib: 2.7.0
 
   '@types/gapi@0.0.47': {}
+
+  '@types/google.accounts@0.0.15': {}
 
   '@types/json-schema@7.0.15': {}
 
