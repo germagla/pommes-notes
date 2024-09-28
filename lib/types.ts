@@ -12,6 +12,7 @@ export interface Note {
 export interface Folder {
   id: number;
   name: string;
+  provider: string;
 }
 
 // Define the structure of grouped notes
