@@ -7,7 +7,7 @@ import { NoteList } from "@/components/NoteList";
 import { NoteEditor } from "@/components/NoteEditor";
 import { Folder, Note, NoteGroups } from "@/lib/types";
 
-const CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+const CLIENT_ID = (process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID as string) || "";
 // const API_KEY = process.env.GOOGLE_API_KEY;
 const SCOPES = "https://www.googleapis.com/auth/drive.file";
 // const DISCOVERY_DOCS = [
@@ -17,7 +17,8 @@ const SCOPES = "https://www.googleapis.com/auth/drive.file";
 export default function NotesApp() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [accessToken, setAccessToken] = useState<string | null>(null);
-  const [tokenClient, setTokenClient] = useState<string | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [tokenClient, setTokenClient] = useState<any | null>(null);
   const initializeTokenClient = () => {
     console.log("client id", CLIENT_ID, "\n", "scopes", SCOPES);
     // Initialize the GIS token client after the GIS script is loaded
